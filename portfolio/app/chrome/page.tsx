@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button"
+import Header from "../components/Header"
 
 export default function Page() {
   return (
     <div className="flex min-h-svh p-6">
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
         <div>
+          <Header />
           <h1 className="font-medium">Project ready!</h1>
           <p>Ytests</p>
           <p>We&apos;ve already added the button component for you.</p>
