@@ -6,7 +6,7 @@ export default function Page() {
     <div className="flex min-h-svh p-6">
       <div className="w-full flex flex-col gap-4 text-sm leading-loose">
         <div>
-          <Header />
+          
           <h1 className="font-medium">Project ready!</h1>
           <p>Ytests</p>
           <p>We&apos;ve already added the button component for you.</p>
