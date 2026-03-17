@@ -4,7 +4,7 @@ import HeroSection from "./components/hero/HeroSection"
 export default function Page() {
 
   return (
-    <div className="flex min-h-svh p-6">
+    <div className=" min-h-svh p-6">
         <div>
           <HeroSection/>
           <Button className="mt-2">Button</Button>
