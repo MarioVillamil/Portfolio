@@ -18,7 +18,7 @@ export default function StackList(){
 ]
     return(
         <div>
-            <ul>
+            <ul className="flex flex-row">
                 {stackList.map((item, index) => (
           <li key={index}>{item.label}</li>
         ))}

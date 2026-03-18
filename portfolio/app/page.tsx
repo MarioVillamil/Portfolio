@@ -11,7 +11,7 @@ export default function Page() {
           <p>We&apos;ve already added the button component for you.</p>
           <Button className="mt-2">Button</Button>
         </div>
-        <div>
+        <div className="flex">
           <StackList/>
         </div>
         <div className="font-mono text-xs text-muted-foreground">
