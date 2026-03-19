@@ -1,28 +1,47 @@
-export default function StackList(){
-    interface InavItem {
-        label : string,
-        type: "language" | "frontend" | "styling" | "ui"
-    }
-    const stackList: InavItem[] = [
-  { label: "C++", type: "language" },
-  { label: "Java", type: "language" },
-  { label: "Python", type: "language" },
-  { label: "TypeScript", type: "language" },
+"use client"
 
-  { label: "React", type: "frontend" },
-  { label: "Next.js", type: "frontend" },
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel"
+import StackItem from "./StackItem"
 
-  { label: "Tailwind CSS", type: "styling" },
+export default function StackList() {
+  interface INavItem {
+    label: string
+    image: string
+    type: "language" | "frontend" | "styling" | "ui"
+  }
 
-  { label: "shadcn/ui", type: "ui" }
-]
-    return(
-        <div>
-            <ul className="flex flex-row">
-                {stackList.map((item, index) => (
-          <li key={index}>{item.label}</li>
+  const stackList: INavItem[] = [
+    { label: "C++", image: "/c++.png", type: "language" },
+    { label: "Java", image: "/java.png", type: "language" },
+    { label: "Python", image: "/python.png", type: "language" },
+    { label: "React", image: "/react.png", type: "frontend" },
+    { label: "Next.js", image: "/nextjs-icon.webp", type: "frontend" },
+    { label: "Tailwind CSS", image: "/tailwindcss.png", type: "styling" },
+    { label: "shadcn/ui", image: "/shadcnuikit.webp", type: "ui" },
+  ]
+
+  return (
+    <Carousel
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      className="w-full"
+    >
+      <CarouselContent>
+        {stackList.map((item) => (
+          <CarouselItem
+            key={item.label}
+            className="basis-1/2 md:basis-1/3 lg:basis-1/5"
+          >
+            <StackItem label={item.label} image={item.image} />
+          </CarouselItem>
         ))}
-            </ul>
-        </div>
-    )
+      </CarouselContent>
+    </Carousel>
+  )
 }

@@ -1,9 +1,11 @@
 interface ITitle {
-  title: string;
+  title: string
 }
 
 export default function StackTitle({ title }: ITitle) {
   return (
-    <h2>{title}</h2>
-  );
+    <h2 className="mb-4 text-sm text-zinc-400">
+      {title}
+    </h2>
+  )
 }
