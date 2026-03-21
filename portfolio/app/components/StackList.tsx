@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel"
 import StackItem from "./StackItem"
 
@@ -42,6 +44,8 @@ export default function StackList() {
           </CarouselItem>
         ))}
       </CarouselContent>
+      <CarouselPrevious/>
+      <CarouselNext/>
     </Carousel>
   )
 }
