@@ -4,7 +4,7 @@ import Stack from "./components/Stack"
 export default function Page() {
   return (
     <div className="w-full min-h-svh p-6 justify-center">
-      <div className="bg-red-200 ">
+      <div className="">
         <div>
           <h1 className="font-medium">Mario</h1>
           <p>You may now add components and start building.</p>
