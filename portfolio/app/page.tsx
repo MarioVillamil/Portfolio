@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Stack from "./components/Stack"
 import HeroSection from "./components/hero/HeroSection"
 
 export default function Page() {
@@ -12,6 +13,9 @@ export default function Page() {
         <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
+      <div>
+        <Stack />
+      </div>
       </div>
   )
 }
