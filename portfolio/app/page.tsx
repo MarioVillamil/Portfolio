@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import Stack from "./components/Stack"
+import Stack from "./components/stack/Stack"
 import HeroSection from "./components/hero/HeroSection"
 
 export default function Page() {
