@@ -7,7 +7,7 @@ interface StackItemProps {
 
 export default function StackItem({ label, image }: StackItemProps) {
   return (
-    <div className="flex h-16 items-center justify-center rounded-xl border  bg-secondary px-3">
+    <div className="flex h-16 items-center justify-center rounded-xl border  bg-background px-3">
       <Image
         src={image}
         alt={label}

@@ -9,16 +9,16 @@ export default function Navigation (){
     const navList :InavItem[]=[
         
         {
-        label:"Qui suis-je",
+        label:"About me",
         pathName : "#",
         },
         {
         label:"Stack",
-        pathName : "#",
+        pathName : "#stack",
         },
         {
         label:"Curriculum Vitae",
-        pathName : "#",
+        pathName : "#cv",
         },
         {
         label:"Projects",
