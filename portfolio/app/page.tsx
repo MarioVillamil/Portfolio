@@ -1,24 +1,23 @@
-import { Button } from "@/components/ui/button"
-import Stack from "./components/stack/Stack"
 import HeroSection from "./components/hero/HeroSection"
-import CvSection from "./components/cv/CvSection"
+import Stack from "./components/stack/Stack"
+import ProjectsSection from "./components/projects/ProjectSection"
+import ContactSection from "./components/contact/ContactSection"
 
 export default function Page() {
-
   return (
-    <div className=" min-h-svh p-6">
-        <div>
-          <HeroSection/>
-        </div>
-      <div>
+    <main className="min-h-svh">
+      <HeroSection />
+
+      <div className="mx-auto max-w-6xl px-6">
         <Stack />
       </div>
-      <div>
-        <CvSection/>
-      </div>
+
+      <ProjectsSection />
+       <ContactSection />
+
       <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
-      </div>
+    </main>
   )
 }

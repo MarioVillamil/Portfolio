@@ -10,7 +10,7 @@ export default function Navigation (){
         
         {
         label:"About me",
-        pathName : "#",
+        pathName : "#about",
         },
         {
         label:"Stack",
@@ -22,11 +22,11 @@ export default function Navigation (){
         },
         {
         label:"Projects",
-        pathName : "#",
+        pathName : "#projects",
         },
         {
         label:"Contact",
-        pathName : "#",
+        pathName : "#contact",
         }
 ]
     return(
